@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "65562615851",
+    "project_id": "flutter-prac8",
+    "storage_bucket": "flutter-prac8.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:65562615851:android:3bbd82f2bb427ad228ca6e",
+        "android_client_info": {
+          "package_name": "com.company.prac8"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAdFwxMY97loV-ysvtqJe2zCuDpR7edWYc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
