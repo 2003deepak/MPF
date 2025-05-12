@@ -2,6 +2,7 @@ import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'firebase_options.dart';
 import 'screens/login_screen.dart';
+import "screens/update_password_screen.dart";
 
 void main() async {
   // Ensure Flutter binding is initialized
@@ -57,10 +58,12 @@ class MyApp extends StatelessWidget {
             ),
           ),
         ),
+        
       ),
       // Add named routes for navigation
       routes: {
         '/login': (context) => const LoginScreen(),
+        '/update-password': (context) => const UpdatePasswordScreen(), // Add this line
         // Add other routes here as you create them
       },
       home: const LoginScreen(),

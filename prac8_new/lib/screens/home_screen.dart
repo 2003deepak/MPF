@@ -3,6 +3,7 @@ import 'package:firebase_auth/firebase_auth.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import '../models/user_data.dart';
 import 'login_screen.dart';
+import 'update_password_screen.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({Key? key}) : super(key: key);
@@ -145,12 +146,20 @@ class _HomeScreenState extends State<HomeScreen> {
         backgroundColor: const Color(0xFF43A047),
         foregroundColor: Colors.white,
         actions: [
-          IconButton(
-            icon: const Icon(Icons.logout),
-            onPressed: _signOut,
-            tooltip: 'Sign Out',
-          ),
-        ],
+  IconButton(
+    icon: const Icon(Icons.lock_reset),
+    onPressed: () => Navigator.push(
+      context,
+      MaterialPageRoute(builder: (context) => const UpdatePasswordScreen()),
+    ),
+    tooltip: 'Change Password',
+  ),
+  IconButton(
+    icon: const Icon(Icons.logout),
+    onPressed: _signOut,
+    tooltip: 'Sign Out',
+  ),
+],
       ),
       body:
           _isLoading

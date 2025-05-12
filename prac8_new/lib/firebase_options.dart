@@ -48,6 +48,8 @@ class DefaultFirebaseOptions {
     storageBucket: 'flutter-prac8.firebasestorage.app',
   );
 
+  
+
   // iOS Firebase Configuration (Add this if you need iOS support)
   static const FirebaseOptions ios = FirebaseOptions(
     apiKey: 'AIzaSyD2JTk3czLKx69BY9LTv5hH84J9AlnxJCo',
